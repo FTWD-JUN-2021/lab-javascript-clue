@@ -164,7 +164,14 @@ function selectRandom(arr) {
   return randomElement;
 }
 
-function pickMystery() {}
+function pickMystery() {
+  const newObj = {
+    suspect: selectRandom(suspectsArray),
+    weapon: selectRandom(weaponsArray),
+    room: selectRandom(roomsArray)
+  }
+  return newObj;
+}
 
 
 // ITERATION 3
